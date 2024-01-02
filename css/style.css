@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    margin: 1rem;
+    height:100%;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    border-left: 1px solid #000; /* Adjust border styles */
+    border-right: 1px solid #000; /* Adjust border styles */
+    box-sizing: border-box;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #0d2833;
+}
+
+.compass {
+    border: 1px solid;
+    background-color: #5cf5bc;
+    max-width: 270px;
+    padding: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.compass p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.fa-gear {
+    margin-left: auto;
+}
+
+.conn {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+    max-width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #fff;
+}
+
+.conn:hover{
+    animation: glow 1s infinite alternate;
+} 
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px 2px #FFFFFF;
+    }
+    to {
+        box-shadow: 0 0 20px 5px #dee7de;
+        background-color: #dde6dd;
+    }
+}
+
+
+
+.saved-connections {
+    border: 1px;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900px;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #fff;
+    
+    /* margin-bottom: 10px; */
+}
+
+.saved-connections #ellipsis {
+    display: none;
+}
+
+.saved-connections:hover #ellipsis {
+    display: inline-block
+}
+
+.connections {
+    position: relative;
+    padding: 20px; 
+}
+
+.recent {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px;
+    max-width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #fff;
+}
+
+.recent #ellipsis {
+    display: none;
+}
+
+.recent:hover #ellipsis {
+    display: inline-block;
+}
